@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease all;
+}
+
+html, body{
+    overflow: hidden;
+}
+
+.bloqueadoText{
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+header.cabezal{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    background-color: #222;
+    text-align: center;
+    align-items: center;
+}
+
+div.titulo{
+    position: absolute;
+    top: 15px;
+    left: 4%;
+}
+
+span.icono{
+    color: #fff;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.stringTitulo{
+    color: #fff;
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 450;
+}
+
+div.opciones{
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    background-color: #222;
+}
+
+div.titulo2{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--Transparente);
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    color: #fff !important;
+    margin-left: -10px;
+    left: 0;
+}
+
+header.cabezal{
+    border-bottom: 5px solid rgb(29, 79, 197);
+}
+
+div.opciones{
+    border-right: 1.5px solid rgb(29, 79, 197);
+}
+
+div.ocurrencias{
+    width: 65%;
+    height: 50%;
+    position: absolute;
+    left: 5%;
+    top: 19%;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+button.uno, button.dos, button.tres{
+    border-style: none;
+    border-radius: 2px;
+    padding: 7px 0px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}  
+
+button.uno, button.dos, button.tres{
+    background-color: var(--colorGOD);
+    font-family: var(--Familia1);
+    font-weight: 500;
+    color: var(--colorGOD2);
+}
+
+button.uno, button.dos, button.tres{
+    margin-top: 20px;
+}
+
+div.escribirDiv{
+    position: absolute;
+    width: 77%;
+    background-color: var(--Transparente) !important;
+    height: 80%;
+    top: 90px;
+    left: 300px;
+}
+
+div.AddTitle{
+    width: 90%;
+    height: 50px;
+    top: 10px;
+}
+
+div.AddNote{
+    width: 90%;
+    height: 90%;
+}
+
+input.anadirTitulo{
+    width: 80%;
+    height: 50px;
+    font-size: 100%;
+    outline: none;
+}
+
+.anadirTexto{
+    width: 90%;
+    height: 80%;
+    margin-top: 25px;
+    outline: none;
+    resize: none;
+}
+
+div.AddNote{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+div.distraccion{
+    display: flex;
+    justify-content: center;
+}
+
+button.agregarNota{
+    background-color: var(--colorSend);
+    padding: 5px;
+    font-size: 100%;
+    border-radius: 3px;
+    font-family: var(--Familia1);
+    width: 50%;
+    margin-left: -100px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+div.notasDiv{
+    position: absolute;
+    width: 65%;
+    background-color: var(--Transparente) !important;
+    height: 70%;
+    top: 90px;
+    left: 300px;
+    overflow: auto;
+}
+
+div.contenedor{
+    overflow: auto;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background: var(--Transparente);
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+div.contenedor > div{
+    margin-left: -100px;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 80%;
+    height: 100px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+}
+
+div.contenedor > div > p{
+    font-size: 17px;
+}
+
+div.contenedor > div > div.distraccion2{
+    width: 70%;
+    height: 25px;
+    margin-top: -20px;
+    margin-left: -120px;
+    overflow: hidden;
+}
+
+div.contenedor > div > div.distraccion2 > label{
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+div.contenedor::-webkit-scrollbar{
+    width: 7px;
+}
+
+div.contenedor::-webkit-scrollbar-thumb{
+    background-color: rgb(29, 79, 197);
+}
+
+button.view{
+    background-color: var(--colorSend) !important;
+    padding: 4px 10px;
+    font-family: var(--Familia1);
+    font-weight: 500;
+    color: #fff;
+}
+
+button.view{
+    margin-top: -100px;
+    margin-left: 400px;
+}
+
+button.delet{
+    background-color: rgb(158, 43, 43);
+    padding: 4px 10px;
+    font-family: var(--Familia1);
+    font-weight: 500;
+    color: #fff;
+}
+
+button.delet{
+    margin-top: -100px;
+}
+
+div.distraccion3{
+    width: 40%;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 25px;
+    margin-left: -315px;
+}
+
+div.distraccion3 > p{
+    margin: 0;
+}
+
+div.viewNoteV1{
+    position: fixed;
+    background-color: var(--transparentNegro);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+div.cuerpo{
+    overflow: hidden;
+    background-color: var(--Claro);
+    width: 55%;
+    height: 80%;
+    position: absolute;
+    top: 50px;
+    left: 24%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+div.arriba{
+    width: 98%;
+    margin-top: 10px;
+    height: 60px;
+    border: 0.5px solid rgb(175, 175, 175);
+    border-radius: 3px;
+}
+
+div.arriba > p{
+    font-family: arial black;
+    margin-left: 5%;
+    margin-top: 11px;
+}
+
+div.abajo{
+    width: 98%;
+    position: absolute;
+    top: 100px;
+    height: 74%;
+    border: 0.5px solid rgb(175, 175, 175);
+    border-radius: 3px;
+}
+
+div.abajo > p{
+    font-family: arial black;
+    margin-left: 5%;
+    margin-top: 11px;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    background-color: rgb(213, 99, 99);
+    padding: 7px 15px;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 650;
+    color: var(--cerrarColorTXT);
+}
+
+#AddTitle2{
+    position: absolute;
+    color: var(--azulGOD);
+    position: absolute;
+    left: 10%;
+    top: 11px;
+}
+
+#AddText{
+    overflow: auto;
+    position: absolute;
+    top: 50px;
+    width: 80%;
+    height: 300px;
+}
+
+#AddText::-webkit-scrollbar{
+    width: 1px;
+}
+
+#AddText::-webkit-scrollbar-thumb{
+    background-color: rgb(29, 79, 197);
+}
+
+#wintex{
+    padding: 7px 15px;
+    background-color: var(--transparentNegro);
+    position: absolute;
+    top: 10px;
+    left: 94%;
+    color: rgb(156, 156, 57);
+
+}
+
+label, p{
+    font-family: var(--Familia1);
+}
+
+div.viewWarn{
+    display: none;
+    position: fixed;
+    background-color: var(--transparentNegro);
+    width: 100%;
+    height: 100%;
+}
+
+div.pagn{
+    position: absolute;
+    background-color: black;
+    width: 40%;
+    border-radius: 3px;
+    height: 350px;
+    top: 150px;
+    left: 31%;
+}
+
+div.arriba2{
+    width: 100%;
+    height: 70px;
+    border-bottom: 0.1px solid rgb(105, 104, 104);
+}
+
+div.arriba2 > span{
+    position: absolute;
+    color: white;
+    font-family: var(--Familia3);
+    font-size: 17px;
+    top: 15px;
+    left: 5%;
+}
+
+div.abajo2{
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    left: 5%;
+}
+
+div.EncacillaTexto{
+    position: absolute;
+    top: 30px;
+    left: 1%;
+    width: 75%;
+    height: 60%;
+
+}
+
+div.guardadoText{
+    display: flex;
+}
+
+:root{
+    --colorGOD: #33FF68;
+    --Familia1: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --Familia2: 'Roboto', sans-serif;
+    --Familia3: monospace;
+    --colorGOD2: rgb(78, 83, 98);
+    --Transparente: transparent;
+    --colorSend:  rgb(44, 119, 206);
+    --transparentNegro: #272626a6;
+    --Claro: rgb(238, 232, 232);
+    --cerrarColorTXT: rgb(214, 214, 214);
+    --borderClasico: 5px solid #1d4fc5;
+    --azulGOD:#1d4fc5;
+}
+
+.peligro{
+    background-color: rgb(158, 43, 43);
+}
+
+div.escribirDiv{
+    overflow: hidden;
+}
+
+/*
+
+    Aqui no va nada de nada y no pongas ni merga debajo de este comentario >:v
+    841
+    615
+
+*/

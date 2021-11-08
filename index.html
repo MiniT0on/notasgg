@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formatos.css">
+    <title>Mis notas locales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="AppComputer">
+        <form class="forms" method="post" id="formato">
+            <div class="escribirDiv" id="prota">
+                <div class="AddTitle">
+                    <center><input type="text" placeholder="Agrega un titulo" class="anadirTitulo" spellcheck="false"
+                            name="title" id="wol1" required=""></center>
+                </div>
+                <div class="AddNote">
+                    <textarea cols="30" rows="10" class="anadirTexto" placeholder='Agrega aquí tu contenido'
+                        spellcheck="false" name="description" id="wol2" required=""></textarea>
+                </div>
+                <div class="distraccion">
+                    <button class="agregarNota" type="submit">Guardar</button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="notasDiv" id="wentana" style="height: 0%;">
+            <center>
+                <div class="contenedor" id="Manejador">
+
+                </div>
+            </center>
+        </div>
+        <div class="opciones">
+            <div class="titulo2">
+                <span class="contextoTitulo bloqueadoText">
+                    Caja de opciones
+                </span>
+            </div>
+            <div class="ocurrencias">
+                <center>
+                    <div class="abaj">
+                        <ul>
+                            <p class="bloqueadoText" style="background-color: transparent;color: transparent;">-</p>
+                            <li>
+                                <center>
+                                    <button class="uno bloqueadoText btn" id="btn1">Escribir</button>
+                                </center>
+                            </li>
+                            <p class="bloqueadoText" style="background-color: transparent;color: transparent;">-</p>
+                            <li>
+                                <center>
+                                    <button class="dos bloqueadoText btn" id="btn2">Mis notas</button>
+                                </center>
+                            </li>
+                            <p class="bloqueadoText" style="background-color: transparent;color: transparent;">-</p>
+                            <li>
+                                <center>
+                                    <button class="tres bloqueadoText btn" id="btn3">Configuración</button>
+                                </center>
+                            </li>
+                        </ul>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <!-- Cabeza de la pagina -->
+        <header class="cabezal">
+            <div class="titulo">
+                <span class="icono bloqueadoText">
+                    <i class="fab fa-dailymotion"></i>
+                </span>
+                <span class="stringTitulo bloqueadoText">
+                    Mis notas locales
+                </span>
+            </div>
+            <button id="wintex"><i class="fas fa-exclamation"></i></button>
+        </header>
+
+        <!-- Alerta -->
+        <div class="viewWarn">
+            <div class="pagn">
+                <div class="arriba2">
+                    <span class="text-warning">Advertencia</span>
+                    <button class="close" id="Sayonara2">X</button>
+                </div>
+                <div class="abajo2">
+                    <p class="text-warning">Advertencia</p>
+                    <div class="EncacillaTexto">
+                        <p class="TxtoWe text-warning">--##--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interfaz grafica para visualizar las notas agregadas aquí -->
+
+        <div class="viewNoteV1">
+            <div class="cuerpo">
+                <div class="arriba">
+                    <p>Titulo:
+                    <p id="AddTitle2"></p>
+                    </p>
+                    <button class="close" id="Sayonara">X</button>
+                </div>
+                <div class="abajo">
+                    <p>Mensaje: </p>
+                    <p id="AddText" style="font-family:var(--Familia1);"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- En efecto -->
+
+    <div class="guardadoText">
+
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/837be55f0a.js"></script>
+
+<script src="./data/interactividad.js"></script>
+
+<script src="./data/config.js"></script>
+
+</html>

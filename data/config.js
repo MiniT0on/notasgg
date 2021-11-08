@@ -1,11 +1,8 @@
 // Agregando la funcion de guardar notas
 
 { 
-    if(localStorage.length > 0 ){
-        localStorage.setItem('Notas', '');
-    }else{
-        console.log("El almacenamiento esta funcionando!");
-    }
+    console.warn("No coloques codigo malicioso que pueda afectar a las notas locales que hayas guardado dentra de esta pagina. El codigo malicioso puede robar la información almacenada aquí.");
+    console.info("Poner codigo JavaScript con futro de robo podría afectar tu información personal.")
 
     document.getElementById('formato').addEventListener('submit', e=>{
         AddNote();

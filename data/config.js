@@ -1,7 +1,7 @@
 // Agregando la funcion de guardar notas
 
 { 
-    if(localStorage.length <= 0){
+    if(localStorage.length > 0 ){
         localStorage.setItem('Notas', '');
     }else{
         console.log("El almacenamiento esta funcionando!");
@@ -48,6 +48,9 @@
             }
         }
     }
+
+    // Borrar los objetos uno por uno
+
     function borrarElemento(tatle){
         let taka = JSON.parse(localStorage.getItem('Notas'));
         for(let i = 0; i < taka.length; i++){
@@ -60,6 +63,7 @@
         obtenerInformacion();
     }
 
+    // Pasando de texto a objetos con JSON y
      function obtenerInformacion() {
         let taka = JSON.parse(localStorage.getItem('Notas'));
         let nana = document.getElementById('Manejador');
